@@ -8,8 +8,8 @@ fun main(args: Array<String>) {
     }
     val job = GlobalScope.launch {
         repeat(1000000) {
-            yield()
             println(it)
+            //delay(100)
         }
     }
     GlobalScope.launch {
